@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+.desktop-header {
+  display: none;
+}
+body {
+  margin: 0px 20px;
+}
+.mobile-header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+.mobile-header .logo h2 {
+  color: rgba(56, 56, 56);
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+.mobile-header .logo h2 span {
+  color: #014787;
+}
+.mobile-header a .hamburger {
+  width: 30px;
+  height: 30px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero h1,
+.hero h4 {
+  text-align: center;
+}
+.hero h1 {
+  font-weight: 600;
+  font-size: 2.02rem;
+}
+.hero h1 span {
+  color: #014787;
+}
+.hero h4 {
+  margin-top: 30px;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.hero button {
+  padding: 1em 1.5em;
+  border: 0;
+  outline: 0;
+  font-size: 1.2rem;
+  margin: 50px;
+  border-radius: 10px;
+  background-color: #014787;
+  color: white;
+}
+.hero2 > img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.hero2 .info-box-container {
+  position: relative;
+  top: -50px;
+}
+.hero2 .info-box-container .info-box {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.info-box h3 {
+  color: #014787;
+  padding: 10px 0px;
+  font-size: 0.9rem;
+}
+.info-box h4 {
+  color: rgba(56, 56, 56, 0.911);
+  font-weight: 200;
+  padding: 20px 0px;
+}
+.socials {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socials a img {
+  width: 25px;
+  margin: 0px 10px 70px;
+}
+.writers-container {
+  background-color: #014787;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+.writers-container > h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+.writers-container .all-writers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.writers-container .all-writers div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+.writers-container .all-writers div img {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 50%;
+}
+.writers-container .all-writers div h5 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 15px 0px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1448px) {
+  .mobile-header {
+    display: none;
+  }
+  .desktop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .desktop-header .logo h2 {
+    color: rgba(56, 56, 56);
+    font-size: 2rem;
+  }
+  .desktop-header .logo h2 span {
+    color: #014787;
+  }
+  .desktop-header > input {
+    background-color: #ededed;
+    width: 200px;
+    padding: 10px;
+    font-size: 1.15rem;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+  }
+  .desktop-header a {
+    position: absolute;
+    right: 13rem;
+  }
+  .desktop-header a img {
+    width: 1.25rem;
+  }
+  .menu {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .hero h1 {
+    margin: 40px 0px 0px;
+    width: 50%;
+    font-size: 3.75rem;
+  }
+  .hero h4 {
+    width: 30%;
+    font-size: 1.5rem;
+    color: grey;
+  }
+  .hero button {
+    padding: 1em 2em;
+    margin-top: 30px;
+  }
+  .hero2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    position: relative;
+  }
+  .hero2 .socials {
+    flex: none;
+    position: absolute;
+    right: -50px;
+    bottom: -20px;
+    justify-content: center;
+  }
+  .hero2 > img {
+    width: 53.125rem;
+    height: 31.25rem;
+  }
+  .hero2 .info-box-container {
+    margin: 6rem 0px 4rem;
+    left: -6rem;
+  }
+  .hero2 .info-box-container .info-box {
+    padding: 1.875rem 2.5rem;
+    width: 125%;
+  }
+  .hero2 .info-box-container .info-box h3 {
+    font-size: 1.25rem;
+  }
+  .hero2 .info-box-container .info-box h2 {
+    width: 70%;
+    font-size: 2.75rem;
+  }
+  .hero2 .info-box-container .info-box h4 {
+    font-size: 1.25rem;
+    color: grey;
+  }
+  .writers-container h2 {
+    font-size: 2.25rem;
+    margin-top: 30px;
+  }
+  .writers-container {
+    margin: 6.25rem 3.125rem;
+    width: 90vw;
+    height: 80vh;
+  }
+  .writers-container .all-writers div {
+    flex-wrap: wrap;
+    flex: 1 0 21%;
+    margin: 10px;
+  }
+  .writers-container .all-writers div h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
